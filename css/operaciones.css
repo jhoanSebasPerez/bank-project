@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.brand{
+    width: 30%;
+    color: #2b4993;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.brand-icon{
+    font-size: 3rem;
+}
+
+.description {
+    width: 60%;
+}
+
+.options{
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.options-left, .options-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-option{
+    width: 210px;
+    padding: 10px 16px;
+    background-color: #2b4993;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-option:hover{
+    background-color: #4a69b8;
+}
+
+.btn-left{
+    text-align: left;
+    border-bottom-left-radius: 16px;
+}
+
+.btn-right{
+    text-align: right;
+    border-top-right-radius: 16px;
+}
+
+.cancel-option{
+    background-color: rgb(94, 93, 93);
+}
+
+.cancel-option:hover{
+    background-color: rgb(151, 147, 147);
+}
+
+@media (320px <= width <= 480px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .options{
+        flex-direction: column;
+        gap: 55px;
+        align-items: center;
+    }
+
+    .btn-left, .btn-right{
+        border-radius: 8px;
+        text-align: center;
+    }
+    
+}
