@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 900px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #2b4993;
+    margin-bottom: 35px;
+}
+
+.brand span{
+    width: 10%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.brand-icon {
+    font-size: 3rem;
+}
+
+.description{
+    width: 60%;
+    margin: 35px auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+input[type="number"]{
+    border: 1px solid black;
+    max-width: 280px;
+    width: 50%;
+    padding: 0 5px;
+    height: 2.5rem;
+    border-radius: 4px;
+    margin-bottom: 35px;
+}
+
+/** remove arrow inside input type number **/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.numbers-container{
+    max-width: 280px;
+    width: 50%;
+    margin: 0 auto 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.number {
+    width: 78px;
+    height: 38px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #2b4993;
+    color: white;
+    font-weight: 500;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.btn-option{
+    width: 210px;
+    padding: 10px 16px;
+    background-color: #2b4993;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-option:hover{
+    background-color: #4a69b8;
+}
+
+.btn-left{
+    text-align: left;
+    border-bottom-left-radius: 16px;
+}
+
+.btn-right{
+    text-align: right;
+    border-top-right-radius: 16px;
+}
+
+.cancel-option{
+    background-color: rgb(94, 93, 93);
+}
+
+.cancel-option:hover{
+    background-color: rgb(151, 147, 147);
+}
+
+@media (320px <= width <= 480px) {
+
+    input[type="number"]{
+        width: 90%;
+    }
+
+    .numbers-container{
+        width: 90%;
+    }
+
+    .options{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .btn-left, .btn-right{
+        border-radius: 4px;
+        text-align: center;
+    }
+}
